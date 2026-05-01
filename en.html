@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruby Kiwi | Vibrant and Sweet Red-Centered Juiciness</title>
+    <meta name="description" content="Experience premium Ruby Kiwi with its stunning ruby-red heart center, exceptionally sweet taste, and rich vitamin C, folate, and antioxidant content.">
+    <!-- CSS styles -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Ionicons for modern icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">RUBY<span>KIWI</span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" onclick="toggleMenu()">Home</a></li>
+                <li><a href="#features" onclick="toggleMenu()">Features</a></li>
+                <li><a href="#story" onclick="toggleMenu()">Brand Story</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </ul>
+            <div class="nav-right">
+                <a href="index.html" class="lang-switch">KR</a>
+                <button class="mobile-toggle" onclick="toggleMenu()">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <span class="hero-tag">Premium Ruby Kiwi</span>
+                <h1 class="hero-title">Discover the Glow of<br><span>Ruby-Red Sweetness</span></h1>
+                <p class="hero-desc">Indulge in a premium fruit experience with exceptional sweetness, moist texture, and a striking starburst core. Taste the exquisite juiciness of the authentic Ruby Kiwi.</p>
+                <div class="hero-buttons">
+                    <a href="#features" class="btn btn-primary">Learn More</a>
+                    <a href="#contact" class="btn btn-outline">Inquire Now</a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <div class="hero-backdrop"></div>
+                <img src="ruby_kiwi_hero.png" alt="Ruby Kiwi Hero Banner" class="hero-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">Why <span>Ruby Kiwi?</span></h2>
+            <div class="features-grid">
+                <!-- Feature 1 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <ion-icon name="color-palette-outline"></ion-icon>
+                    </div>
+                    <h3>Radiant Ruby Core</h3>
+                    <p>A striking ruby-red center delivers aesthetic delight, transforming every meal or snack into a gourmet dessert experience.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <ion-icon name="wine-outline"></ion-icon>
+                    </div>
+                    <h3>Extra Sweet & Juicy</h3>
+                    <p>Substantially higher brix than regular green and gold kiwis, offering a delicate, soft flesh full of intensely refreshing juice.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <ion-icon name="sparkles-outline"></ion-icon>
+                    </div>
+                    <h3>Nutrient Powerhouse</h3>
+                    <p>Packed with natural vitamin C, dietary fiber, folate, and powerful antioxidants to boost vitality and refresh your active lifestyle.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section class="story" id="story">
+        <div class="container story-grid">
+            <div class="story-image-wrapper">
+                <img src="ruby_kiwi_story.png" alt="Pristine Ruby Kiwi Orchard" class="story-image">
+            </div>
+            <div class="story-content">
+                <h2>Brought to You by<br><span>Mother Nature</span></h2>
+                <p>Our Ruby Kiwis are grown in meticulously chosen, premium orchards blessed with clear skies, ocean breezes, and volcanic-rich soil. Countless hours of care ensure each fruit matures to perfection.</p>
+                <p>From careful blossom pollination to harvesting and eco-conscious packaging, our dedication preserves the natural integrity and delicious sweetness of this exceptional variety. Start your day with Ruby Kiwi.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container contact-grid">
+            <div class="contact-info">
+                <h3>Get in Touch</h3>
+                <p>Interested in bulk ordering, international export, or partnerships? Drop us a message using the form or reach us via our contact information.</p>
+                <ul class="contact-details">
+                    <li>
+                        <span><ion-icon name="call-outline"></ion-icon></span>
+                        +82-2-1234-5678
+                    </li>
+                    <li>
+                        <span><ion-icon name="mail-outline"></ion-icon></span>
+                        contact@rubykiwi.kr
+                    </li>
+                    <li>
+                        <span><ion-icon name="location-outline"></ion-icon></span>
+                        Ruby Building 4F, Teheran-ro 123, Seoul, Korea
+                    </li>
+                </ul>
+            </div>
+            <form class="contact-form" onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <label for="name">Name / Company</label>
+                    <input type="text" id="name" class="form-control" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" class="form-control" rows="5" placeholder="Tell us about your inquiries" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <a href="#" class="footer-logo">RUBY<span>KIWI</span></a>
+            <ul class="footer-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#story">Story</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <p class="copyright">&copy; 2026 Ruby Kiwi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('navLinks');
+            if (window.innerWidth <= 768) {
+                nav.classList.toggle('active');
+            }
+        }
+
+        function handleSubmit(e) {
+            e.preventDefault();
+            alert('Your message has been successfully sent. We will get back to you shortly!');
+            e.target.reset();
+        }
+    </script>
+</body>
+</html>
